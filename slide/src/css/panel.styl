@@ -1,0 +1,67 @@
+@media screen
+  #progress-panel
+    position: absolute;
+    color: white;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    z-index: 100;
+
+    & .bar-container
+      width: 100%;
+      height: 4px;
+      background: white;
+
+      & .bar-timer
+        width: 0%;
+        height: 4px;
+        background: red;
+
+      & .bar-page
+        width: 0%;
+        height: 4px;
+        background: blue;
+
+  #tweet-panel
+    position: absolute;
+    font-size: 24px;
+    color: #dddddd;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    z-index: 100;
+    & .tweet
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+      & .margin-container
+        margin: 4px;
+        box-sizing: border-box;
+
+        & .avatar
+          width: 48px;
+          height: 48px;
+          margin: 4px;
+          float: left;
+
+        & .names
+          font-size: 22px;
+          font-weight: bold;
+
+  #template
+    display: none;
+
+@media print
+  #progress-panel
+    display: none;
+
+  #tweet-panel
+    display: none;
+
+  #template
+    display: none;

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="icon" href="images/chibapm.png" type="image/png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./main.min.css" />
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/remark/remark.min.js"></script>
+    <script src="./main.min.js"></script>
+  </head>
+  <body>
+    <textarea id="source"><%= markdown %></textarea>
+    <div id="progress-panel">
+      <div class="bar-container"><div class="bar-timer"></div></div>
+      <div class="bar-container"><div class="bar-page"></div></div>
+    </div>
+    <div id="tweet-panel"></div>
+    <div id="template">
+      <div class="margin-container">
+        <img class="avatar">
+        <span class="text"></span>
+        <span class="names">
+          <span class="name"></span>
+          (@<span class="screen_name"></span>)
+        </span>
+      </div>
+    </div>
+    <div id="tweets"></div>
+  </body>
+</html>
+<!-- vi:set sts=2 sw=2 et: -->

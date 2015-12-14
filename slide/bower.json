@@ -1,0 +1,37 @@
+{
+  "name": "chibapm7",
+  "version": "0.0.1",
+  "authors": [
+    "Kenichi Kobayashi <niratama3@gmail.com>"
+  ],
+  "description": "for chiba.pm #7",
+  "main": "static/main.js",
+  "license": "MIT",
+  "homepage": "https://github.com/niratama/chibapm7",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "remark": "0.12.0",
+    "jquery": "2.1.4"
+  },
+  "exportsOverride": {
+    "jquery": {
+      "": [
+        "dist/jquery.js",
+        "dist/jquery.min.js",
+        "dist/jquery.min.map"
+      ]
+    },
+    "remark": {
+      "": [
+        "out/remark.js",
+        "out/remark.min.js"
+      ]
+    }
+  }
+}
